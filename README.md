@@ -157,10 +157,10 @@ ADD host/on_pre_init.sh /sources/sftp/
 # Logs to file
 * If you want to sshd access logs to file for fail2ban etc, you can use docker command with redirect in this manner.
 ```
-docker logs -f sftp >> access.log 2>&1 &
+docker logs --timestamps -f sftp >> access.log 2>&1 &
 ```
 ```
-docker logs -f sftp |tee -a access.log &
+docker logs --timestamps -f sftp |tee -a access.log &
 ```
 
 <br />
