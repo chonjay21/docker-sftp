@@ -39,7 +39,7 @@ else
 	echo "[] Fixing permision ..."
 		chown -R $APP_USER_NAME:$APP_USER_NAME $SFTP_CONF_PATH
 		chown $APP_USER_NAME:$APP_USER_NAME $SFTP_DATA_PATH
-		chown $APP_USER_NAME:$APP_USER_NAME $SFTP_DATA_PATH/data
+		chown $APP_USER_NAME:$APP_USER_NAME $SFTP_DATA_PATH/data || true
 	echo "Done."
 	
 	echo "[] Setting password: ${APP_USER_NAME}"	
