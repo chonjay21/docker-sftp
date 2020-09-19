@@ -29,6 +29,6 @@ ADD sources/ $SFTP_SOURCE_DIR/
 RUN chmod 770 $SFTP_SOURCE_DIR/*.sh; \
 	chmod 770 $SFTP_SOURCE_DIR/eventscripts/*.sh; \
 	mkdir -p /var/run/sshd; \
-	mkdir -p $SFTP_DATA_PATH
+	mkdir -p $SFTP_DATA_PATH/data
 
 ENTRYPOINT $SFTP_SOURCE_DIR/entrypoint.sh
