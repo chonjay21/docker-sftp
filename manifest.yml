@@ -1,0 +1,16 @@
+image: chonjay21/sftp:latest
+manifests:
+  - image: chonjay21/sftp:amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: chonjay21/sftp:arm32v7
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7
+  - image: chonjay21/sftp:arm64v8
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8
